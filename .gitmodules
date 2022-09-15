@@ -1,0 +1,3 @@
+[submodule "repos/repos/css-exercises"]
+	path = repos/repos/css-exercises
+	url = git@github.com:susakovich/TheOdinProject.git
