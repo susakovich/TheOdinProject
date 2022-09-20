@@ -7,7 +7,7 @@
 
 /* HERO SECTION */
 
-.hero {
+#hero {
   background-color: #1f2937;
   width: 100%;
   min-height: 100vh;
@@ -82,6 +82,20 @@ h1 {
   background-color: rgb(86, 133, 242);
   color: white;
   text-align: center;
+  border-radius: 20px;
+}
+
+.hero__info-btn:hover {
+  color: white;
+  width: 25%;
+  padding: 20px 45px;
+  font-size: 28px;
+  transition: all ease 1s;
+  border-radius: 40px;
+}
+
+img {
+  filter: drop-shadow(0 -5mm 4mm #1f2937);
 }
 
 /* ABOUT SECTION */
@@ -89,7 +103,7 @@ h1 {
 h3 {
   text-align: center;
   font-size: 40px;
-  color: #dca577;
+  color: #1f2937;
   margin-top: 60px;
   margin-bottom: 60px;
 }
@@ -98,6 +112,7 @@ h3 {
   display: flex;
   justify-content: center;
   gap: 40px;
+  margin-bottom: 100px;
 }
 
 .cat-img {
@@ -106,17 +121,114 @@ h3 {
 }
 
 h4 {
-  text-align: center;
+  text-align: left;
+  font-weight: 500;
+  font-size: 20px;
   display: flex;
   margin: auto;
   width: 300px;
 }
 
+img {
+  border-radius: 100px;
+}
+
 .about__content-text {
+  text-align: left;
+  font-size: 14px;
   margin-top: 20px;
   flex-direction: column;
-  flex-wrap: wrap;
   width: 300px;
-  color: #4e474e;
-  height: 400px;
+  color: #878587;
+}
+
+/* Testimonial Section */
+
+#testimonials {
+  text-align: center;
+  background: #1f2937;
+  color: white;
+}
+
+h2 {
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 3rem;
+}
+
+.testimonials-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.my-slide {
+  height: 600px;
+}
+
+/* CONTACT */
+
+#contact {
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+
+.contact_wrapper-info {
+  position: relative;
+  color: white;
+  border: 1px solid;
+  padding: 40px 80px;
+  border-radius: 40px;
+  background-color: rgb(86, 133, 242);
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.contact_wrapper-heading {
+  font-size: 28px;
+}
+
+.contact_wrapper-button {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  width: 15%;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 15px 30px;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.contact_wrapper-button:hover {
+  top: 40px;
+  color: white;
+  transition: all ease 1s;
+  border: 2px solid #dca577;
+}
+/* Foooter */
+footer {
+  background-color: #1f2937;
+  color: #dca577;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #dca577;
+}
+
+.footer-link:hover {
+  border-bottom: 1px solid white;
+  color: #ffffff;
+  font-size: 24px;
+  transition: all ease 1s;
 }
