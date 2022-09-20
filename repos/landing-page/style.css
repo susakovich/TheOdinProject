@@ -83,3 +83,40 @@ h1 {
   color: white;
   text-align: center;
 }
+
+/* ABOUT SECTION */
+
+h3 {
+  text-align: center;
+  font-size: 40px;
+  color: #dca577;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.about__content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.cat-img {
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  text-align: center;
+  display: flex;
+  margin: auto;
+  width: 300px;
+}
+
+.about__content-text {
+  margin-top: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+  color: #4e474e;
+  height: 400px;
+}
