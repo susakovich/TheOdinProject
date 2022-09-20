@@ -5,7 +5,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-/* HERO SECTION */
+/* Hero Section */
 
 #hero {
   background-color: #1f2937;
@@ -31,7 +31,7 @@ header {
   text-decoration: none;
   color: white;
   font-size: 22px;
-  transition: all ease-in-out 0.5s;
+  transition: all ease 0.5s;
 }
 
 .hero__navigation a:hover {
@@ -40,8 +40,6 @@ header {
   border-bottom: 1px solid;
   transition: all ease 1s;
 }
-
-/* HERO CONTENT */
 
 .hero__content {
   display: flex;
@@ -74,7 +72,7 @@ h1 {
 
 .hero__info-btn {
   display: inline-block;
-  width: 22%;
+  width: 26%;
   margin-top: 40px;
   font-size: 26px;
   text-decoration: none;
@@ -86,19 +84,18 @@ h1 {
 }
 
 .hero__info-btn:hover {
-  color: white;
-  width: 25%;
-  padding: 20px 45px;
-  font-size: 28px;
-  transition: all ease 1s;
+  color: #dca577;
+  background-color: white;
+  transition: all ease 2s;
   border-radius: 40px;
 }
 
 img {
   filter: drop-shadow(0 -5mm 4mm #1f2937);
+  border-radius: 100px;
 }
 
-/* ABOUT SECTION */
+/* About Section */
 
 h3 {
   text-align: center;
@@ -129,10 +126,6 @@ h4 {
   width: 300px;
 }
 
-img {
-  border-radius: 100px;
-}
-
 .about__content-text {
   text-align: left;
   font-size: 14px;
@@ -157,7 +150,7 @@ h2 {
 }
 
 .testimonials-img {
-  width: 10%;
+  width: 15%;
   border-radius: 100%;
   margin: 20px;
 }
@@ -170,7 +163,7 @@ h2 {
   height: 600px;
 }
 
-/* CONTACT */
+/* Contact Section */
 
 #contact {
   margin-top: 160px;
@@ -196,7 +189,7 @@ h2 {
   position: absolute;
   top: 50px;
   right: 100px;
-  width: 15%;
+  width: 20%;
   font-size: 20px;
   text-decoration: none;
   padding: 15px 30px;
@@ -207,12 +200,14 @@ h2 {
 }
 
 .contact_wrapper-button:hover {
-  top: 40px;
-  color: white;
-  transition: all ease 1s;
-  border: 2px solid #dca577;
+  color: #dca577;
+  background-color: white;
+  transition: all ease 2s;
+  border-radius: 40px;
 }
-/* Foooter */
+
+/* Footer */
+
 footer {
   background-color: #1f2937;
   color: #dca577;
