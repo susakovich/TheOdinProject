@@ -21,16 +21,18 @@
       let user = prompt("Who's there?");
 
       if (user == "Admin") {
-        let userPass = prompt("Please enter your password:");
-        if (userPass === "" || userPass === null) {
-          alert("Canceled.");
-        } else if (userPass !== "TheMaster") {
-          alert("I don't know you.");
-        } else if (userPass === "TheMaster") {
+        let userPass = prompt("What is your password?");
+        if (userPass === "TheMaster") {
           alert("Welcome.");
+        } else if (userPass === null || userPass === "") {
+          alert("Canceled");
+        } else {
+          alert("Wrong password");
         }
       } else if (user === null || user === "") {
-        alert(`Canceled`);
+        alert("Canceled");
+      } else {
+        alert("I don't know you.");
       }
     </script>
   </body>
