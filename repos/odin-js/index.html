@@ -7,7 +7,30 @@
     <title>TOP JavaScript</title>
   </head>
   <body>
+    <!-- <label for="theme">Select theme: </label>
+    <select id="theme">
+      <option value="white">White</option>
+      <option value="black">Black</option>
+    </select>
+
+    <h1>This is my website</h1> -->
+
     <script>
+      // const select = document.querySelector("select");
+      // const html = document.querySelector("html");
+      // document.body.style.padding = "10px";
+
+      // function update(bgColor, textColor) {
+      //   html.style.backgroundColor = bgColor;
+      //   html.style.color = textColor;
+      // }
+
+      // select.addEventListener("change", () =>
+      //   select.value === "black"
+      //     ? update("black", "white")
+      //     : update("white", "black")
+      // );
+
       // Write the code which asks for a login with prompt.
 
       // If the visitor enters "Admin", then prompt for a password, if the input is an empty line or Esc – show “Canceled”, if it’s another string – then show “I don’t know you”.
@@ -18,21 +41,138 @@
       // 2. Another string – show “Wrong password”,
       // 3. For an empty string or cancelled input, show “Canceled”
 
-      let user = prompt("Who's there?");
+      // let user = prompt("Who's there?");
 
-      if (user == "Admin") {
-        let userPass = prompt("What is your password?");
-        if (userPass === "TheMaster") {
-          alert("Welcome.");
-        } else if (userPass === null || userPass === "") {
-          alert("Canceled");
-        } else {
-          alert("Wrong password");
-        }
-      } else if (user === null || user === "") {
-        alert("Canceled");
-      } else {
-        alert("I don't know you.");
+      // if (user == "Admin") {
+      //   let userPass = prompt("What is your password?");
+      //   if (userPass === "TheMaster") {
+      //     alert("Welcome.");
+      //   } else if (userPass === null || userPass === "") {
+      //     alert("Canceled");
+      //   } else {
+      //     alert("Wrong password");
+      //   }
+      // } else if (user === null || user === "") {
+      //   alert("Canceled");
+      // } else {
+      //   alert("I don't know you.");
+      // }
+
+      // Ask for age and name, than respond
+      // let age = prompt("Your age?", 18);
+      // let userName = prompt("What is your name?");
+
+      // let message =
+      //   age < 3
+      //     ? `Hi, baby ${userName}`
+      //     : age < 18
+      //     ? `Hello! ${userName}`
+      //     : age < 100
+      //     ? `Greetings! ${userName}`
+      //     : `What an unusual age! ${userName}`;
+
+      // alert(message);
+
+      // Using the if..else construct, write the code which asks: ‘What is the “official” name of JavaScript?’
+
+      // If the visitor enters “ECMAScript”, then output “Right!”, otherwise – output: “You don’t know? ECMAScript!”
+
+      // let official_js = prompt("What is the 'official' name of JavaScript?");
+
+      // if (official_js === "ECMAScript") {
+      //   alert("You are right!");
+      // } else {
+      //   alert("You don't know? ECMAScript!");
+      // }
+
+      // Using if..else, write the code which gets a number via prompt and then shows in alert:
+
+      // 1, if the value is greater than zero,
+      // -1, if less than zero,
+      // 0, if equals zero.
+      // In this task we assume that the input is always a number.
+
+      // let message;
+
+      // if (login == "Employee") {
+      //   message = "Hello";
+      // } else if (login == "Director") {
+      //   message = "Greetings";
+      // } else if (login == "") {
+      //   message = "No login";
+      // } else {
+      //   message = "";
+      // }
+
+      // let login = prompt("Enter your login");
+      // let message =
+      //   login == "Employee"
+      //     ? "Hello"
+      //     : login == "Director"
+      //     ? "Greetings"
+      //     : login == ""
+      //     ? "No login"
+      //     : "";
+      // alert(message);
+      // Set the current day of the week to a variable, with 0 being Sunday and 6 being Saturday
+      const day = new Date().getDay();
+
+      switch (day) {
+        case 0:
+          console.log("It's Sunday, time to relax!");
+          break;
+        case 1:
+          console.log("Happy Monday!");
+          break;
+        case 2:
+          console.log("It's Tuesday. You got this!");
+          break;
+        case 3:
+          console.log("Hump day already!");
+          break;
+        case 4:
+          console.log("Just one more day 'til the weekend!");
+          break;
+        case 5:
+          console.log("Happy Friday!");
+          break;
+        case 6:
+          console.log("Have a wonderful Saturday!");
+          break;
+        default:
+          console.log("Something went horribly wrong...");
+      }
+
+      // Get number corresponding to the current month, with 0 being January and 11 being December
+      const month = new Date().getMonth();
+
+      switch (month) {
+        // January, February, March
+        case 0:
+        case 1:
+        case 2:
+          console.log("Winter");
+          break;
+        // April, May, June
+        case 3:
+        case 4:
+        case 5:
+          console.log("Spring");
+          break;
+        // July, August, September
+        case 6:
+        case 7:
+        case 8:
+          console.log("Summer");
+          break;
+        // October, November, December
+        case 9:
+        case 10:
+        case 11:
+          console.log("Autumn");
+          break;
+        default:
+          console.log("Something went wrong.");
       }
     </script>
   </body>
